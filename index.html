@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Note App</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <h1>The Absolute Note Taking App</h1>  
+  <hr>
+  <div class="green" id="helloDiv"> 
+    <p> Hello! Please enter your name: </p>
+  </div>
+  <p> </p>
+  <div id="giveName">
+    <input type="text" placeholder="Enter your name..." value="" id="nameText">
+    <input type="button" value="Submit" id="nameButton">
+  </div>
+  <p> </p><a href="/notes">Go to my notes</a></p>
+  <form action="/search" method="get">
+  <input type="text" placeholder="Search your notes for..." name="q" id="search">
+  <input type="submit" value="Search"></form>
+  <p> </p>
+  <form action="/add" method="get">
+  <input type="text" placeholder="Add your new note..." name="n" id="add">
+  <input type="submit" value="Add note"></form>
+  <script> src="static/notes.js" </script>
+</body>
+</html>
